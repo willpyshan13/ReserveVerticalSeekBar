@@ -1,0 +1,33 @@
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+
+    // APP VERSION
+    androidVersionCode          = 13
+    androidVersionName          = '1.2.3' // REMEMBER: also update README.md (all instances)
+
+    // ANDROID VERSION
+    androidCompileSdkVersion    = 28
+    androidMinSdkVersion        = 16
+    androidTargetSdkVersion     = 28
+
+    // KOTLIN
+    kotlinStdlibGroupId         = "org.jetbrains.kotlin"
+    kotlinStdlibArtifactId      = "kotlin-stdlib"
+    kotlinStdlibVersion         = ext.kotlin_version
+    kotlinStdlib                = "$kotlinStdlibGroupId:$kotlinStdlibArtifactId:$kotlinStdlibVersion"
+
+    // ANDROID LIB
+    androidXVersion             = '1.1.0'
+    androidXAppCompat           = "androidx.appcompat:appcompat:$androidXVersion"
+    cardViewGroupId             = "androidx.cardview"
+    cardViewArtifactId          = "cardview"
+    cardViewVersion             = '1.0.0'
+    cardView                    = "$cardViewGroupId:$cardViewArtifactId:$cardViewVersion"
+
+}
