@@ -85,4 +85,15 @@
 
     </FrameLayout>
 
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/base_icon_right"
+            android:background="#6ba800"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+    </FrameLayout>
+
 </FrameLayout>

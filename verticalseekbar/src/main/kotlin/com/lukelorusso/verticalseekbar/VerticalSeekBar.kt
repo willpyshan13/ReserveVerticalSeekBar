@@ -2,6 +2,7 @@
 
 package com.lukelorusso.verticalseekbar
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
@@ -315,6 +316,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
         px / (resources.displayMetrics.densityDpi.toFloat() / DisplayMetrics.DENSITY_DEFAULT)
     //endregion
 
+    @SuppressLint("ClickableViewAccessibility", "SetTextI18n")
     private fun applyAttributes() {
         if (initEnded) {
             initEnded = false // will be released at the end
