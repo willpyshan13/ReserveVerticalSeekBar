@@ -18,23 +18,19 @@
         android:textStyle="italic" />
 
     <RelativeLayout
+        android:background="@color/colorPrimary"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="10dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/base_icon_progress_bar_icon" />
 
         <com.lukelorusso.verticalseekbar.VerticalSeekBar
             android:id="@+id/mainVerticalSeekBar"
-            android:layout_width="80dp"
-            android:layout_height="280dp"
+            android:layout_width="60dp"
+            android:layout_height="480dp"
             android:layout_gravity="center"
             app:vsb_bar_background="@android:color/transparent"
             app:vsb_bar_corner_radius="15dp"
-            app:vsb_bar_width="10dp"
+            app:vsb_bar_width="2dp"
             app:vsb_click_to_set_progress="false"
             app:vsb_show_thumb="true"
             app:vsb_thumb_container_tint="@android:color/transparent"

@@ -344,6 +344,8 @@ open class VerticalSeekBar @JvmOverloads constructor(
             // Customizing drawableCardView
             barCardView.layoutParams.width = barWidth ?: 0
 
+            barBackgroundTop.layoutParams.width = barWidth ?: 0
+
             // Customizing drawableBackground
             if (barBackgroundDrawable == null) barBackgroundDrawable = GradientDrawable(
                 GradientDrawable.Orientation.TOP_BOTTOM,

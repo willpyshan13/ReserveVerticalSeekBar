@@ -5,6 +5,15 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+    <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/barBackgroundTop"
+        android:background="#393D3B"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="10dp"
+        android:layout_height="90dp" />
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/barCardView"
         android:layout_width="match_parent"
@@ -14,7 +23,7 @@
 
         <View
             android:id="@+id/barProgress"
-            android:background="@drawable/base_icon_progress_bar_icon"
+            android:background="#393D3B"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
