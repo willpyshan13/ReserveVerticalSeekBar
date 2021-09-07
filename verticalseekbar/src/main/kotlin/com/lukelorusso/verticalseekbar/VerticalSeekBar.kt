@@ -35,9 +35,9 @@ open class VerticalSeekBar @JvmOverloads constructor(
     companion object {
         private const val DEFAULT_MAX_VALUE = 100
         private const val DEFAULT_PROGRESS = 0
-        private const val DEFAULT_DRAWABLE_BACKGROUND: String = "#f6f6f6"
-        private const val DEFAULT_DRAWABLE_PROGRESS_START: String = "#4D88E1"
-        private const val DEFAULT_DRAWABLE_PROGRESS_END: String = "#7BA1DB"
+        private const val DEFAULT_DRAWABLE_BACKGROUND: String = "#000000"
+        private const val DEFAULT_DRAWABLE_PROGRESS_START: String = "#1A1A1A"
+        private const val DEFAULT_DRAWABLE_PROGRESS_END: String = "#252525"
     }
 
     enum class Placeholder {
@@ -358,7 +358,7 @@ open class VerticalSeekBar @JvmOverloads constructor(
                 GradientDrawable.Orientation.TOP_BOTTOM,
                 intArrayOf(barProgressStartColor, barProgressEndColor)
             ).apply { cornerRadius = 0f }
-//            barProgress.background = barProgressDrawable
+            barProgress.background = barProgressDrawable
 
             // Applying card corner radius
             barCardView.radius = barCornerRadius.toFloat()
